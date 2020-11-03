@@ -1,0 +1,52 @@
+C# Notes-
+
+Object Oriented, Component Oriented, type-safe
+
+Features:
+    Garbage Collection
+    Exception Handling
+    Lambda Expressions
+    Query Syntax
+
+    All types share the root object type: object
+
+Namespaces - a hierachical means of organizing C# programs and libraries
+
+Types-
+    Value Types - contain their data
+        Simple Types
+        Enum Types
+        Struct Types*
+        Nullable value Types
+        Tuple value types
+    Reference Types - store references to their data, or an Object
+        Class Types*
+        Interface Types*
+        Array Types
+        Delegate Types*
+
+        *user definable
+
+        Primitive Types
+            byte
+            sbyte
+            int 
+            uint
+            short
+            ushort
+            long
+            ulong
+            float
+            double
+            char
+            bool
+            objectstring
+            decimal
+            DateTime
+Accessibility
+    public: Access isn't limited.
+    private: Access is limited to this class.
+    protected: Access is limited to this class or classes derived from this class.
+    internal: Access is limited to the current assembly (.exe or .dll).
+    protected internal: Access is limited to this class, classes derived from this class, or classes within the same assembly.
+    private protected: Access is limited to this class or classes derived from this type within the same assembly.

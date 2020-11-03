@@ -1,0 +1,10 @@
+VCS - version control system
+SCM - source control system
+Centralized Model
+    The code is stored at a single location and is changed there.
+Distributed Model
+    Each developer has a copy of the entire history of the code.
+
+The working directroy or work tree, the files in the folder on the local machine
+Index, staging area - git add, what files we are committing
+Local Repository - commit history, a commit is a frozen set of changes made to any of the files

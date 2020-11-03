@@ -1,0 +1,44 @@
+COMMANDS:
+    cd <dir>
+        change directory
+    ls <dir>
+        list contents of a directory
+    mkdir <dir>
+        create directory
+    rm <path>
+        delete a file
+    rm -r <path>
+        deletes a directory with its contents
+    mv <path1> <path2>
+        rename/move a file/directory
+    touch <path>
+        create an empty file
+    pwd
+        print working directory
+    echo <something>
+        prints something
+    which
+        finds the location of a given variable
+    grep
+        searchs for text
+    find
+        searches in a folder for given files
+
+Important Information
+    .. means parented directory
+    . means currect directory
+    * is a wildcard
+    | sends the output to the next command
+    > sends output to the specified file, overwrites the data
+    >> sends output to the specified file, appends
+    absolute paths
+        begin with /
+        means the same no matter your current directory
+        e.g. /c/revature
+    relative paths
+        do not start with /
+        are relative to current folder
+    variables, $
+    PATH
+        This is where all runable commands are located
+    
