@@ -1,0 +1,5 @@
+To create a new dot project use command
+    dotnet new console -o <foldername>
+
+floating point numbers do have a limit to how accurate they accurate are 
+int, double, bool, and string are the most common primitive types

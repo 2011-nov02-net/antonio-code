@@ -1,0 +1,4 @@
+https://docs.microsoft.com/en-us/dotnet/fundamentals/
+https://docs.microsoft.com/en-us/dotnet/csharp/
+https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/
+https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/local-environment
