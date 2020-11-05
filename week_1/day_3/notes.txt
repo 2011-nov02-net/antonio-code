@@ -1,0 +1,25 @@
+properties:
+    these are fields that hold data that can also have their own rules for getting and setting
+
+Running the debugger:
+    You need to have the .vscode folder
+    ctrl+shift+p search build and debug assets
+    to get terminal input change launch.json change the console setting
+
+Common Language Infastructure
+    The process of turning projects into executable code.
+    Projects -> Compiler -> Assemblies -> Common Langauge Runtime -> Just in time compiler -> CPU
+        The CLI (Common Language Infastructure) is a process that to compiles projects, or source code, into assemlies (these are written in Common Intermediate Language CIL), using a compilier (C# compilier, Roslyn, MSBuild).
+        Then the Common Language Runtime (CLR) uses a Just In Time Compiler (JIT) that turns them into native instructions to be used by the current machine's CPU.
+
+Mono  is an older cross platform .Net
+.NET Standard is what ties each implementation together, .NET Framework & .NET Core & Mono
+    You do this by compiling them into assemblies that are not specific to either
+
+nuget.org <- installs and use dependencies
+
+variables contain their data, they do not share a value location
+
+Garbage Collections - automated checking of the referenced types that are used so that the memory is not completely used. The CLR handles this.
+
+Enums - 

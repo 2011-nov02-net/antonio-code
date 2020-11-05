@@ -6,6 +6,7 @@ namespace classes
     public class BankAccount
     {
         private static int accountNumberSeed = 1234567890;
+        //strings are immutable
         public string Number { get; }
         public string Owner { get; set; }
         public decimal Balance
