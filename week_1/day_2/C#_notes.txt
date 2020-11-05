@@ -27,7 +27,7 @@ Types-
 
         *user definable
 
-        Primitive Types
+        Primitive Types (still derive from object class)
             byte
             sbyte
             int 
