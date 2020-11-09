@@ -1,0 +1,1 @@
+Serialization is taking all the data we want to store and turning it into a series of bytes.

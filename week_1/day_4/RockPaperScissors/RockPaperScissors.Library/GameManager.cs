@@ -60,8 +60,15 @@ namespace RockPaperScissors.Library
                     return Choice.Paper;
                 case "s":
                     return Choice.Scissor;
+                default:
+                    break;
             }
             return Choice.Paper;
+        }
+
+        public List<Match> GetMatches()
+        {
+            return _matchHistory;
         }
     }
 }

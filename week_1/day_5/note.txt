@@ -1,0 +1,4 @@
+Learn:
+    list, dictionary, hashset, stack, queue
+
+    Ola from HR: ola.ogunsanya@revature.com

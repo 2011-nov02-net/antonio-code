@@ -8,17 +8,21 @@ namespace RockPaperScissors.ConsoleApp
         static void Main(string[] args)
         {
             string response = "";
-            GameManager GameManager = new GameManager();
+            var GameManager = new GameManager();
+            string _filePath = "../../../data.json";
 
-            while(response != "n" || response != "N") {
-                Console.WriteLine();
+            var file = new JsonSaveFile(_filePath);
+            file.Read();
+            while (response != "n") {
                 Console.WriteLine("Enter your choice: (r, p, s)\n");
-                string choice = Console.ReadLine();
-                Match match = GameManager.RunGame(choice);
+                response = Console.ReadLine();
+                Match match = GameManager.RunGame(response);
 
                 Console.WriteLine($"Your Choice: {match._userChoice} AI Choice: {match._aiChoice} Result: {match._result}");
                 GameManager.PrintMatchHistory();
             }
+
+            file.Write(GameManager);
             
         }
     }
