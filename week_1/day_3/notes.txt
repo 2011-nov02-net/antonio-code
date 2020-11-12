@@ -9,7 +9,7 @@ Running the debugger:
 Common Language Infastructure
     The process of turning projects into executable code.
     Projects -> Compiler -> Assemblies -> Common Langauge Runtime -> Just in time compiler -> CPU
-        The CLI (Common Language Infastructure) is a process that to compiles projects, or source code, into assemlies (these are written in Common Intermediate Language CIL), using a compilier (C# compilier, Roslyn, MSBuild).
+        The CLI (Common Language Infastructure) is a process that to compiles projects, or source code, into assemblies (these are written in Common Intermediate Language CIL), using a compilier (C# compilier, Roslyn, MSBuild).
         Then the Common Language Runtime (CLR) uses a Just In Time Compiler (JIT) that turns them into native instructions to be used by the current machine's CPU.
 
 Mono  is an older cross platform .Net
