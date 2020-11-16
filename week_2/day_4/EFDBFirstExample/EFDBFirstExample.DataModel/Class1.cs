@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EFDPFirstDemo.DataModel
+namespace EFDBFirstExample.DataModel
 {
     public class Class1
     {

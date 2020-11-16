@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace EFDPFirstDemo.ConsoleApp
+namespace EFDBFirstExample.DataModel
 {
     public partial class Department
     {

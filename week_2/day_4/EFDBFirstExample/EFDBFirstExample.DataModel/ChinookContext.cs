@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace EFDPFirstDemo.ConsoleApp
+namespace EFDBFirstExample.DataModel
 {
     public partial class ChinookContext : DbContext
     {

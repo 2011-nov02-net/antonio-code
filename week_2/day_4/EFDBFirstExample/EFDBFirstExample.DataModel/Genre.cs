@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace EFDPFirstDemo.ConsoleApp
+namespace EFDBFirstExample.DataModel
 {
-    public partial class MediaType
+    public partial class Genre
     {
-        public MediaType()
+        public Genre()
         {
             Tracks = new HashSet<Track>();
         }
 
-        public int MediaTypeId { get; set; }
+        public int GenreId { get; set; }
         public string Name { get; set; }
 
         public virtual ICollection<Track> Tracks { get; set; }
