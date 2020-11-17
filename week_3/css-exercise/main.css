@@ -1,0 +1,33 @@
+main {
+    border: 1px solid red;
+    background-color: beige;
+    width: 400px;
+    padding: 1em;
+}
+
+#fox-image {
+    border: 5px solid orange;
+    height: 100px;
+    width: 305px;
+    margin-bottom: 1em;
+}
+
+#fox-talk {
+    border: 5px dashed orange;
+    width: 305px;
+}
+
+.text {
+    height: 200px;
+    overflow-y: scroll;
+    background-color: yellow;
+}
+
+.strong {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.paragraph-member {
+    margin-left: 5px;
+}
