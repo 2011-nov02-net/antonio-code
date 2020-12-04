@@ -8,4 +8,4 @@ RUN dotnet publish -c Release -o out
 ENV ASPNETCORE_URLS http://*:80
 
 # Build runtime image
-ENTRYPOINT ["dotnet", "mvc-mendez.app.dll"]
+ENTRYPOINT ["dotnet", "out/mvc-mendez.app.dll"]
