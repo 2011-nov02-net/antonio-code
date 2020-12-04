@@ -1,5 +1,7 @@
-FROM mcr.microsoft.com/dotnet/runtime:5.0
+FROM mcr.microsoft.com/dotnet/sdk:5.0
 
-copy publish/ /app
+COPY . /app
 
-cmd dotnet /app/DockerConsoleApp.dll
+RUN dotnet build publish -o publish
+
+CMD dotnet /app/publish/DockerConsoleApp.dll
