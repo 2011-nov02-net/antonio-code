@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>mvc_mendez.WebApp</RootNamespace>
+    <RootNamespace>mvc_mendez.app</RootNamespace>
   </PropertyGroup>
 
 </Project>

@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:60486",
-      "sslPort": 44374
+      "applicationUrl": "http://localhost:27204",
+      "sslPort": 44358
     }
   },
   "profiles": {
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "mvc_mendez.WebApp": {
+    "mvc_mendez.app": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

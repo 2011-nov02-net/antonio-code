@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using mvc_mendez.WebApp.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using mvc_mendez.app.Models;
 
-namespace mvc_mendez.WebApp.Controllers
+namespace mvc_mendez.app.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace mvc_mendez.WebApp.Models
+namespace mvc_mendez.app.Models
 {
     public class ErrorViewModel
     {
