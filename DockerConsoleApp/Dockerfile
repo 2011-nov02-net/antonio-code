@@ -6,4 +6,4 @@ COPY . ./
 
 RUN dotnet build publish -o publish
 
-CMD dotnet /app/publish/DockerConsoleApp.dll
+CMD dotnet publish/DockerConsoleApp.dll
