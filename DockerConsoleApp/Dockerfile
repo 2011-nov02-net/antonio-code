@@ -1,7 +1,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0
 
-COPY . /app
+WORKDIR /app
 
-RUN dotnet build publish -o publish
+COPY . ./
 
-CMD dotnet /app/publish/DockerConsoleApp.dll
+#RUN dotnet build publish -o publish
+
+CMD dotnet run
