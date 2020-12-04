@@ -1,0 +1,69 @@
+functionality
+    place orders to store locations for customers
+X    add a new customer
+X    search customers by name
+X    display details of an order
+X    display all order history of a store location
+X    display all order history of a customer
+    client-side validation [new]
+    server-side validation [new]
+X    exception handling
+    CSRF prevention [new]
+X    persistent data; no prices, customers, order history, etc. hardcoded in C#
+    logging of exceptions, EF SQL commands, and other events [newly required]
+    (optional: order history can be sorted by earliest, latest, cheapest, most expensive)
+    (optional: get a suggested order for a customer based on his order history)
+    (optional: display some statistics based on order history)
+    (optional: asynchronous network & file I/O)
+
+design
+X    use EF Core (either database-first approach with a SQL script or code-first approach with migrations) [changed]
+X    use an Azure SQL DB in third normal form
+X    don't use public fields
+X    define and use at least one interface
+    
+    core / domain / business logic
+X        class library
+X        contains all business logic
+X        contains domain classes (customer, order, store, product, etc.)
+X        documentation with <summary> XML comments on all public types and members (optional: <params> and <return>)
+X        (recommended: has no dependency on UI, data access, or any input/output considerations)
+    
+    customer
+X        has first name, last name, etc.
+X        (optional: has a default store location to order from)
+    
+    order
+X        has a store location
+X        has a customer
+X        has an order time (when the order was placed)
+X        can contain multiple kinds of product in the same order
+X        rejects orders with unreasonably high product quantities
+        (optional: some additional business rules, like special deals)
+    
+    location
+X        has an inventory
+X        inventory decreases when orders are accepted
+X        rejects orders that cannot be fulfilled with remaining inventory
+X        (optional: for at least one product, more than one inventory item decrements when ordering that product)
+    
+X    product (etc.)
+    
+    user interface
+X        ASP.NET Core MVC web application [new]
+X        separate request processing and presentation concerns with MVC pattern [new]
+X        strongly-typed views [new]
+X        minimize logic in views [new]
+        use dependency injection [new]
+        customize the default styling to some extent [new]
+        keep CodeNamesLikeThis out of the visible UI [new]
+X        has only display- and input-related code
+    data access
+X        class library
+X        contains EF Core DbContext and entity classes
+X        contains data access logic but no business logic
+X        use repository pattern for separation of concerns
+test
+    at least 10 test methods
+    focus on unit testing business logic
+    data access tests (if present) should not impact the app's actual database [new]
