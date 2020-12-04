@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . ./
 
-#RUN dotnet build publish -o publish
+RUN dotnet build publish -o publish
 
-CMD dotnet run
+CMD dotnet /app/publish/DockerConsoleApp.dll
